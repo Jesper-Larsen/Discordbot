@@ -14,8 +14,8 @@ module.exports = {
 				.setRequired(true)),
 	async execute(interaction) {
 		await interaction.reply({
-			content: `Your answer: 
-			${interaction.options.getNumber('num1') + interaction.options.getNumber('num2')}`, 
+			content: 
+			`Your answer: ${interaction.options.getNumber('num1') + interaction.options.getNumber('num2')}`, 
 			ephemeral: true });
 	},
 };
