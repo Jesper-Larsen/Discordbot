@@ -59,9 +59,5 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.on('messageCreate', async message => {
-
-});
-
 // Login to Discord with your client's token
 client.login(process.env.TOKEN);
