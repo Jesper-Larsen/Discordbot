@@ -14,11 +14,12 @@ module.exports = {
 
 		// Need to make it so it is a list of commands and has 1 file each
 
-		if (message.content = prefix + 'test') {
-			message.reply({content: "hey"})
-
-		}
+		if (message.content === prefix + "hello" && prefix + "Hello") {
+			message.channel.send({content: "Hello World!"})
+		} 
+        else return;
 			
 		console.log(`${message.member} in #${message.channel.name} triggered interaction. with a "!" command`);
+        console.log(`${message.content}`);
 	},
 };

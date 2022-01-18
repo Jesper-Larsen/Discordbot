@@ -1,12 +1,11 @@
 // Require the necessary discord.js classes
 const fs = require('fs')
 const { Client, Intents, Collection } = require('discord.js');
-const { CLIENT_RENEG_LIMIT } = require('tls');
 
 // makes hidden .env file readable
 require('dotenv').config();
 
-const prefix = "!p";
+const prefix = "!p ";
 module.exports = { prefix };
 
 // Create a new client instance
